@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduVerse</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Main Content -->
+        <main
+          role="main"
+          class="main-section col-md-9 col-lg-10 px-md-4 vh-100"
+        >
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mt-4">
+              <li class="breadcrumb-item">
+                <img
+                  class="mr-2 img-fluid"
+                  src="../assets/images/icons/home.svg"
+                  alt="Home icon"
+                />
+                <a href="#">Home</a>
+              </li>
+            </ol>
+          </nav>
+
+          <div aria-label="content-Header" class="border-bottom mb-4">
+            <h6>
+              Temps de lecture approximative :
+              <span class="badge text-white bg-primary">3 minutes</span>
+            </h6>
+            <h1>Où écrire le style CSS</h1>
+          </div>
+
+          <div aria-label="Page main-content" class="main-content">
+            <ol>
+              <li>dans les balises concernées : CSS En ligne.</li>
+              <li>
+                dans l’en-tête du document (on parle de feuille de styles
+                interne).
+              </li>
+              <li>
+                dans un fichier séparé (on parle de feuille de styles externe).
+              </li>
+            </ol>
+            <h2>Local dans la balise</h2>
+            <p>
+              Pour définir des propriétés CSS dans une balise, vous utiliserez
+              l’attribut style : <br />
+              &#60; balise style="propriété1: valeur1;...; propriétéN:
+              valeurN;">
+            </p>
+            <h3><u>Exemple:</u></h3>
+            <p>
+              &#60;h2 style="font-family:Verdana; font-size: 18px;"> Ce titre
+              est en Verdana corps 18 &#60;/h2>
+            </p>
+            <h2>Style interne</h2>
+            <p>Il est aussi possible de taper du CSS directement à l’intérieur même du fichier
+                HTML, entre les balises &#60;head> et &#60;/head>.<br>
+                Vous devrez y mettre une balise &#60;style> &#60;/style>à l’intérieur, comme ceci :
+                &#60;!doctype html><br>
+                &#60;head><br>
+                &#60;meta charset="utf-8" /><br>
+                &#60;title>Exemple de CSS dans le header&#60;/title><br>
+                &#60;style>
+                    /* Vous taperez votre code CSS ici */
+                    &#60;/style>
+                    <!-- STYLE THIS LATER -->
+                    &#60;/head>    <br>
+                    &#60;body>    <br>
+                    &#60;/body>   <br> 
+                    &#60;/html>
+            </p>
+            <h2>Style externe</h2>
+            <p>Pour relier une feuille de styles externe à un fichier HTML,
+                vous utiliserez la balise <Link> dans l’entête de ce fichier
+                (ici, la feuille de styles a pour nom design.css) :</p>
+                &#60;link rel="stylesheet" href="design.css" />
+                <ul>
+                    <li>La balise &#60;Link> avertit le navigateur qu’il doit chercher
+                        un document situé à l’extérieur de la page HTML.</li>
+                    <li>L’attribut rel="stylesheet“ précise que le document en
+                        question est une feuille de style externe.</li>
+                    <li>L'attribut href indique l’emplacement du fichier CSS à
+                        utiliser.</li>
+
+                </ul>
+                <p>Avantages</p>
+                <ul>
+                    <li>Vous pouvez utiliser le même fichier .css pour plusieurs pages</li>
+                    <li>Simplifier la maintenance de la mise en forme du site web</li>
+                </ul>        
+          </div>
+          <div aria-label="Page navigation">
+            <nav>
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a
+                    class="page-link"
+                    href="../index.html"
+                    aria-label="Previous"
+                    >Previous</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="../index.html">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="./page2.html" aria-label="Next"
+                    >Next</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </main>
+
+        <!-- Sidebar on the Right -->
+        <nav class="col-md-3 col-lg-2 d-md-block border-left">
+          <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+              <!-- Dashboard Link -->
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" href="#"
+                  >Définition</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

@@ -28,7 +28,7 @@
               <li class="breadcrumb-item">
                 <img
                   class="mr-2 img-fluid"
-                  src="./assets/images/icons/home.svg"
+                  src="../assets/images/icons/home.svg"
                   alt="Home icon"
                 />
                 <a href="#">Home</a>
@@ -41,41 +41,53 @@
               Temps de lecture approximative :
               <span class="badge text-white bg-primary">3 minutes</span>
             </h6>
-            <h1>Introduction to CSS</h1>
+            <h1>Où écrire le style CSS</h1>
           </div>
 
           <div aria-label="Page main-content" class="main-content">
-            <h2>Objectifs du Cours</h2>
-            <h6>À la fin de ce cours, vous serez capable de :</h6>
-            <ul>
-                <li>Maîtriser les bases et l'utilisation avancée du CSS pour styliser vos pages web</li>
-                <li>Créer des mises en page réactives et adaptatives</li>
-                <li>Utiliser les animations et transitions CSS pour dynamiser votre site</li>
-                <li>Exploiter des outils modernes de design pour une gestion de style plus efficace et plus rapide</li>
-            </ul>
-            <h2>Définition</h2>
-            <ul>
-                <li>CSS : c’est l’abréviation de Cascading Style Sheets
-                    ("Feuille de style en cascade").</li>
-                <li>C'est dans la feuille de style que l'on va déclarer toute la
-                    mise en forme des pages : la couleur de fond, les polices
-                    de caractère, leurs couleurs, etc.</li>
-                <li>HTML pour écrire le contenu de nos pages web.</li>
-                <li>CSS pour présenter ce contenu.</li>
-                <li>Ces 2 langages sont donc complémentaires.</li>
-            </ul>
+            <ol>
+              <li>dans les balises concernées : CSS En ligne.</li>
+              <li>
+                dans l’en-tête du document (on parle de feuille de styles
+                interne).
+              </li>
+              <li>
+                dans un fichier séparé (on parle de feuille de styles externe).
+              </li>
+            </ol>
+            <h2>Local dans la balise</h2>
+            <p>
+              Pour définir des propriétés CSS dans une balise, vous utiliserez
+              l’attribut style : <br />
+              &#60; balise style="propriété1: valeur1;...; propriétéN:
+              valeurN;">
+            </p>
+            <h3><u>Exemple:</u></h3>
+            <p>
+              &#60;h2 style="font-family:Verdana; font-size: 18px;"> Ce titre
+              est en Verdana corps 18 &#60;/h2>
+            </p>
           </div>
           <div aria-label="Page navigation">
             <nav>
               <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
-                  <a class="page-link" aria-label="Previous">Previous</a>
+                  <a
+                    class="page-link"
+                    href="../index.html"
+                    aria-label="Previous"
+                    >Previous</a
+                  >
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="../index.html">1</a>
+                </li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item">
-                  <a class="page-link" href="./Pages/page1.html" aria-label="Next">Next</a>
+                  <a class="page-link" href="./page2.html" aria-label="Next"
+                    >Next</a
+                  >
                 </li>
               </ul>
             </nav>
