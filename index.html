@@ -31,7 +31,7 @@
                   src="./assets/images/icons/home.svg"
                   alt="Home icon"
                 />
-                <a href="#">Home</a>
+                <a href="./index.html">Home</a>
               </li>
             </ol>
           </nav>
@@ -45,7 +45,7 @@
           </div>
 
           <div aria-label="Page main-content" class="main-content">
-            <h2>Objectifs du Cours</h2>
+            <h2 id="obj">Objectifs du Cours</h2>
             <h6>À la fin de ce cours, vous serez capable de :</h6>
             <ul>
                 <li>Maîtriser les bases et l'utilisation avancée du CSS pour styliser vos pages web</li>
@@ -53,7 +53,7 @@
                 <li>Utiliser les animations et transitions CSS pour dynamiser votre site</li>
                 <li>Exploiter des outils modernes de design pour une gestion de style plus efficace et plus rapide</li>
             </ul>
-            <h2>Définition</h2>
+            <h2 id="def">Définition</h2>
             <ul>
                 <li>CSS : c’est l’abréviation de Cascading Style Sheets
                     ("Feuille de style en cascade").</li>
@@ -65,15 +65,15 @@
                 <li>Ces 2 langages sont donc complémentaires.</li>
             </ul>
           </div>
-          <div aria-label="Page navigation">
+          <div aria-label="Page navigation" class="p-4">
             <nav>
               <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
                   <a class="page-link" aria-label="Previous">Previous</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item active"><a class="page-link" href="./index.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="./Pages/page1.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="./Pages/page2.html">3</a></li>
                 <li class="page-item">
                   <a class="page-link" href="./Pages/page1.html" aria-label="Next">Next</a>
                 </li>
@@ -81,16 +81,17 @@
             </nav>
           </div>
         </main>
-
         <!-- Sidebar on the Right -->
         <nav class="col-md-3 col-lg-2 d-md-block border-left">
           <div class="sidebar-sticky pt-3">
             <ul class="nav flex-column">
               <!-- Dashboard Link -->
               <li class="nav-item">
-                <a class="nav-link active text-secondary" href="#"
-                  >Définition</a
+                <a class="nav-link active text-secondary" href="./index.html"
+                  >Introduction to CSS</a
                 >
+                <li><a class="nav-link active text-secondary ml-4" href="#obj">Objectifs du Cours</a></li>
+                <li><a class="nav-link active text-secondary ml-4" href="#def">Définition</a></li>
               </li>
             </ul>
           </div>

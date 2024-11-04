@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduVerse</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Main Content -->
+        <main
+          role="main"
+          class="main-section col-md-9 col-lg-10 px-md-4 vh-100"
+        >
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mt-4">
+              <li class="breadcrumb-item">
+                <img
+                  class="mr-2 img-fluid"
+                  src="../assets/images/icons/home.svg"
+                  alt="Home icon"
+                />
+                <a href="../index.html">Home</a>
+              </li>
+            </ol>
+          </nav>
+
+          <div aria-label="content-Header" class="border-bottom mb-4">
+            <h6>
+              Temps de lecture approximative :
+              <span class="badge text-white bg-primary">3 minutes</span>
+            </h6>
+            <h1>Style des listes</h1>
+          </div>
+
+          <div aria-label="Page main-content" class="main-content">
+            <h3>Retrait</h3>
+            <p>
+                La propriété list-style-position permet d'indiquer si on
+                veut que la liste soit mise en retrait ou non.
+                list-style-position peut prendre 2 valeurs :
+
+                inside : la liste n'est pas mise en retrait.
+
+                outside : la liste est mise en retrait (par défaut).
+            </p>
+            <img src="" alt="">
+            <h3>Type des puces</h3>
+            <div class="border border-info">La propriété list-style-type vous permet de changer
+                l’apparence de la puce.
+                Pour les listes non ordonnées (<ul>):
+                disc : un disque noir (par défaut).
+                circle : un cercle.
+                square : un carré.
+                none :aucune puce ne sera utilisée.
+            </div>
+                <br>
+            <div class="border border-info">La propriété list-style-image vous permet d'utiliser
+                n'importe quelle image à la place d’une puce.
+                ul {
+                list-style-image: url (image.png);
+                }
+            </div>
+            <h3>Type de la numérotation</h3>
+            <p>
+                Pour les listes ordonnées (<ol>) , list-style-type peut prendre les valeurs:
+
+                decimal :des nombres 1, 2, 3, 4, 5... (par défaut)
+
+                decimal-leading-zero :des nombres commençant par zéro (01, 02, 03, ...).
+                upper-roman :numérotation romaine, en majuscules (I, II, III, IV, V...)
+                lower-roman :numérotation romaine, en minuscules (i, ii, iii, iv, v...)
+
+                upper-alpha :numérotation alphabétique, en majuscules (A, B, C, D, E...)
+
+                lower-alpha : numérotation alphabétique, en minuscules (a, b, c, d, e...)
+
+                lower-greek : numérotation grecque. (α, β,γ, ...)
+            </p>
+          </div>
+
+          <div aria-label="Page navigation" class="p-4">
+            <nav>
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    href="./page20.html"
+                    aria-label="Previous"
+                    >Previous</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="./page19.html">20</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="./page20.html">21</a></li>
+                <li class="page-item"><a class="page-link" href="./page21.html">22</a></li>
+                <li class="page-item">
+                  <a class="page-link disabled" aria-label="Next"
+                    >Next</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </main>
+
+        <!-- Sidebar on the Right -->
+        <nav class="col-md-3 col-lg-2 d-md-block border-left">
+          <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+              <!-- Dashboard Link -->
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" href="./page1.html"
+                  >Définition</a
+                >
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" href="./page1.html"
+                  >Définition</a
+                >
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" href="./page1.html"
+                  >Définition</a
+                >
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" href="./page1.html"
+                  >Définition</a
+                >
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" href="./page1.html"
+                  >Définition</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

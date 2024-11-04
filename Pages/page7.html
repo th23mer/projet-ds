@@ -41,48 +41,69 @@
               Temps de lecture approximative :
               <span class="badge text-white bg-primary">3 minutes</span>
             </h6>
-            <h1>Un Style</h1>
+            <h1>Taille du texte</h1>
           </div>
 
           <div aria-label="Page main-content" class="main-content">
-            <h2 id="def">Définition d'un style</h2>
-            <p>
-              La définition de base d'un style est simple : <br />
-              balise { propriété de style : valeur;...}
-            </p>
-            <h2 id="exp">Exemples CSS</h2>
-            <p> <h6>Exemple 1</h6>
-              On veut modifier tous les paragraphes pour qu'ils soient
-              écrits en bleu, avec une taille de 18 pixels.
-              Puisque tous les textes des différents paragraphes sont
-              entre les balises &#60;p> &#60;/p>, le code CSS est donc le suivant : <br>
-              p {color: blue; font-size: 18px; } <br><br>
-              <h6>Exemple 2</h6>
-              h3 { font-family: Arial; font-style: italic }
-              Ici, la balise h3 sera en Arial et en italique. Et dans le
-              document, toutes les balises &#60;h3> auront comme style
-              Arial et italique.</p>
-            <h2 id="app">Appliquer un style à plusieurs balises</h2>
-              
+            <p>En pixels : c'est une façon très précise d'indiquer la taille du texte.
+
+p
+{
+font-size:14px; /* Paragraphes de 14 pixels */ }
+h1
+{
+font-size:22px; /* Titres de 22 pixels */ }
+
+<h3>En pourcentage :</h3>
+
+Si vous indiquez "100%", le texte aura une taille "normale".
+Si vous mettez "130%", le texte aura une taille correspondant
+à 130% de la taille normale. </p>
+<div>En donnant une valeur
+    relative :
+    
+    xx-small :minuscule
+    x-small :très petit
+    small :petit
+    medium :moyen
+    large :grand
+    x-large :très grand
+    xx-large : plus grand que
+    le x-large</div>
+    <div>
+        En em : c’est une autre façon
+d’indiquer de manière relative la taille
+du texte.
+On doit indiquer la taille du texte par
+rapport à la taille normale de la police.
+"1em" signifie "Taille normale".
+.petit_em {
+font-size:0.7em;
+}
+.grand_em {
+font-size:1.3em;
+}
+</div>
           </div>
+
           <div aria-label="Page navigation" class="p-4">
             <nav>
               <ul class="pagination justify-content-center">
                 <li class="page-item">
                   <a
                     class="page-link"
-                    href="./page1.html"
+                    href="./page6.html"
                     aria-label="Previous"
                     >Previous</a
                   >
                 </li>
                 <li class="page-item">
-                  <a class="page-link" href="./page1.html">2</a>
+                  <a class="page-link" href="./page6.html">7</a>
                 </li>
-                <li class="page-item active"><a class="page-link" href="./page2.html">3</a></li>
-                <li class="page-item"><a class="page-link" href="./page3.html">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                <li class="page-item"><a class="page-link" href="./page8.html">9</a></li>
                 <li class="page-item">
-                  <a class="page-link" href="./page3.html" aria-label="Next"
+                  <a class="page-link" href="./page8.html" aria-label="Next"
                     >Next</a
                   >
                 </li>
@@ -97,19 +118,9 @@
             <ul class="nav flex-column">
               <!-- Dashboard Link -->
               <li class="nav-item">
-                <a class="nav-link active text-secondary" href="./index.html"
-                  >Introduction to CSS</a
+                <a class="nav-link active text-secondary" href="#"
+                  >Définition</a
                 >
-                <a class="nav-link active text-secondary" href="./index.html"
-                  >Où écrire le style CSS</a
-                >
-                <a class="nav-link active text-secondary" href="./index.html"
-                  >Un Style</a
-                >
-                <li><a class="nav-link active text-secondary ml-4" href="#def">Définition d'un style</a></li>
-                <li><a class="nav-link active text-secondary ml-4" href="#exp">Exemples CSS</a></li>
-                <li><a class="nav-link active text-secondary ml-4" href="#app">Appliquer un style à plusieurs balises</a></li>
-
               </li>
             </ul>
           </div>

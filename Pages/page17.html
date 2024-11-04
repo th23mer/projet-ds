@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduVerse</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Main Content -->
+        <main
+          role="main"
+          class="main-section col-md-9 col-lg-10 px-md-4 vh-100"
+        >
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mt-4">
+              <li class="breadcrumb-item">
+                <img
+                  class="mr-2 img-fluid"
+                  src="../assets/images/icons/home.svg"
+                  alt="Home icon"
+                />
+                <a href="../index.html">Home</a>
+              </li>
+            </ol>
+          </nav>
+
+          <div aria-label="content-Header" class="border-bottom mb-4">
+            <h6>
+              Temps de lecture approximative :
+              <span class="badge text-white bg-primary">3 minutes</span>
+            </h6>
+            <h1>Couleur de fond</h1>
+          </div>
+
+          <div aria-label="Page main-content" class="main-content">
+            <p>
+                Pour indiquer une couleur de fond, on utilise la propriété CSS
+                background-color.
+                Pour indiquer la couleur de fond de la page web, il faut travailler
+                sur la balise &#60;body> qui correspond à toute la page web.
+
+                body {
+                background-color : black;
+                color:white;
+                }
+                Si on applique une couleur de fond noire et une couleur de
+                texte blanche à la balise &#60;body>, tous les titres et paragraphes
+                auront eux aussi une couleur de fond noire et un texte de couleur
+                blanche.
+            </p>
+            <h3>Exemple</h3>
+            <p>
+                body {
+                    background-color: black; color: white; /* Toutes les balises
+                    contenues dans body verront leur texte coloré en blanc... */
+                    }
+                    
+                    h1 {
+                    color: red; /* ... sauf si je demande expressément de changer
+                    la couleur par la suite */
+                    }
+                    
+                    .surligne /* Un style qui permet par exemple de surligner
+                    certains mots d'un texte */ {
+                    background-color:yellow;
+                    color: black; /* Le texte surligné sera écrit en noir*/
+                    }
+            </p>
+            <h3>Dégradé</h3>
+            <p>La propriété linear-gradiant
+                crée un dégradé de haut en bas (ou vice-versa) ou en diagonale</p>
+            <h4>Exemple:</h4>
+            <img src="" alt="">
+            <h4>La propriété radial-gradiant</h4>
+            <p>
+                un dégradé radial commence à partir d'un point central et rayonne
+                la couleur vers les bords d'un conteneur</p>
+                <h4>Exemples :</h4>
+                <img src="" alt="">
+          </div>
+
+          <div aria-label="Page navigation" class="p-4">
+            <nav>
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    href="./page16.html"
+                    aria-label="Previous"
+                    >Previous</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="./page16.html">17</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="./page17.html">18</a></li>
+                <li class="page-item"><a class="page-link" href="./page18.html">19</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="./page18.html" aria-label="Next"
+                    >Next</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </main>
+
+        <!-- Sidebar on the Right -->
+        <nav class="col-md-3 col-lg-2 d-md-block border-left">
+          <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+              <!-- Dashboard Link -->
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" href="#"
+                  >Définition</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

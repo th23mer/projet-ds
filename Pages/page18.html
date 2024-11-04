@@ -41,48 +41,47 @@
               Temps de lecture approximative :
               <span class="badge text-white bg-primary">3 minutes</span>
             </h6>
-            <h1>Un Style</h1>
+            <h1>Image de fond</h1>
           </div>
 
           <div aria-label="Page main-content" class="main-content">
-            <h2 id="def">Définition d'un style</h2>
-            <p>
-              La définition de base d'un style est simple : <br />
-              balise { propriété de style : valeur;...}
+            <ul>
+                <li>La propriété permettant d'indiquer une image de fond est
+                    background-image</li>
+                <li>Comme valeur, on doit lui mettre url("nom_image.extension")</li>
+                <li>L'adresse indiquant où se trouve l'image de fond peut être en
+                    absolu (http://...) ou en relatif (fond.png).</li>
+                <li>Si on veut appliquer une image de fond à toute la page, on doit
+                    utiliser la balise <body></li>
+            </ul>
+            <p>body {
+                background-image : url("../images/neige.png");
+                }
             </p>
-            <h2 id="exp">Exemples CSS</h2>
-            <p> <h6>Exemple 1</h6>
-              On veut modifier tous les paragraphes pour qu'ils soient
-              écrits en bleu, avec une taille de 18 pixels.
-              Puisque tous les textes des différents paragraphes sont
-              entre les balises &#60;p> &#60;/p>, le code CSS est donc le suivant : <br>
-              p {color: blue; font-size: 18px; } <br><br>
-              <h6>Exemple 2</h6>
-              h3 { font-family: Arial; font-style: italic }
-              Ici, la balise h3 sera en Arial et en italique. Et dans le
-              document, toutes les balises &#60;h3> auront comme style
-              Arial et italique.</p>
-            <h2 id="app">Appliquer un style à plusieurs balises</h2>
-              
+            <h3>Répétition</h3>
+            <img src="" alt="">
+            <h3>position</h3>
+            
           </div>
+
           <div aria-label="Page navigation" class="p-4">
             <nav>
               <ul class="pagination justify-content-center">
                 <li class="page-item">
                   <a
                     class="page-link"
-                    href="./page1.html"
+                    href="./page17.html"
                     aria-label="Previous"
                     >Previous</a
                   >
                 </li>
                 <li class="page-item">
-                  <a class="page-link" href="./page1.html">2</a>
+                  <a class="page-link" href="./page17.html">18</a>
                 </li>
-                <li class="page-item active"><a class="page-link" href="./page2.html">3</a></li>
-                <li class="page-item"><a class="page-link" href="./page3.html">4</a></li>
+                <li class="page-item"><a class="page-link" href="./page18.html">19</a></li>
+                <li class="page-item"><a class="page-link" href="./page19.html">20</a></li>
                 <li class="page-item">
-                  <a class="page-link" href="./page3.html" aria-label="Next"
+                  <a class="page-link" href="./page19.html" aria-label="Next"
                     >Next</a
                   >
                 </li>
@@ -97,19 +96,9 @@
             <ul class="nav flex-column">
               <!-- Dashboard Link -->
               <li class="nav-item">
-                <a class="nav-link active text-secondary" href="./index.html"
-                  >Introduction to CSS</a
+                <a class="nav-link active text-secondary" href="#"
+                  >Définition</a
                 >
-                <a class="nav-link active text-secondary" href="./index.html"
-                  >Où écrire le style CSS</a
-                >
-                <a class="nav-link active text-secondary" href="./index.html"
-                  >Un Style</a
-                >
-                <li><a class="nav-link active text-secondary ml-4" href="#def">Définition d'un style</a></li>
-                <li><a class="nav-link active text-secondary ml-4" href="#exp">Exemples CSS</a></li>
-                <li><a class="nav-link active text-secondary ml-4" href="#app">Appliquer un style à plusieurs balises</a></li>
-
               </li>
             </ul>
           </div>

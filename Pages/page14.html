@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduVerse</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Main Content -->
+        <main
+          role="main"
+          class="main-section col-md-9 col-lg-10 px-md-4 vh-100"
+        >
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mt-4">
+              <li class="breadcrumb-item">
+                <img
+                  class="mr-2 img-fluid"
+                  src="../assets/images/icons/home.svg"
+                  alt="Home icon"
+                />
+                <a href="../index.html">Home</a>
+              </li>
+            </ol>
+          </nav>
+
+          <div aria-label="content-Header" class="border-bottom mb-4">
+            <h6>
+              Temps de lecture approximative :
+              <span class="badge text-white bg-primary">3 minutes</span>
+            </h6>
+            <h1>Les couleurs</h1>
+          </div>
+
+          <div aria-label="Page main-content" class="main-content">
+            <p>
+                La propriété qui permet de changer la
+                couleur du texte est color.
+                Voici quelques couleurs que vous
+                pouvez utiliser en tapant simplement
+                leur nom :
+            </p>
+            <h3>Exemple</h3>
+            <p>
+                h1 {
+                    text-align:center; font-family:Arial, "Arial Black", "Times New
+                    Roman", serif; text-decoration: underline; color: green;/* Le titre
+                    en vert */
+                    }
+                    p {
+                    text-indent: 20px; color: blue;/* Les paragraphes en bleu */
+                    }
+                    strong {
+                    color: red; text-decoration: blink; /* ... et les mots importants en
+                    rouge clignotant ! */
+                    }
+            </p>
+            <h3>notation hexadécimale</h3>
+            <ul>
+                <li>Un nom de couleur en hexadécimal, c’est une combinaison
+                    de lettres et de chiffres qui indiquent une couleur.</li>
+                <li>On doit toujours commencer par écrire un dièse (#), suivi de
+                    6 lettres ou chiffres allant de 0 à 9 et de A à F.</li>
+                <li>Ces lettres ou chiffres fonctionnent deux par deux. Les
+                    2 premiers indiquent une quantité de rouge, les 2 suivants
+                    une quantité de vert, et les 2 derniers une quantité de bleu.</li>
+                <li>En mélangeant ces quantités (qui sont les composantes
+                    Rouge-Vert-Bleu de la couleur) on peut obtenir la couleur
+                    qu’on veut.</li>
+            </ul>
+            <img src="" alt="">
+            <h3>notation RGB</h3>
+            <p>Notation basée sur les valeurs décimales des niveaux des trois
+            couleurs de base.
+
+            La valeur de chaque composante est dans l’interval 0-255
+
+            h1 {
+            text-align:center;
+            color:rgb(243,65,243);
+
+            }
+            </p>
+          </div>
+
+          <div aria-label="Page navigation" class="p-4">
+            <nav>
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    href="./page14.html"
+                    aria-label="Previous"
+                    >Previous</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="./page14.html">15</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="./page15.html">16</a></li>
+                <li class="page-item"><a class="page-link" href="./page16.html">17</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="./page16.html" aria-label="Next"
+                    >Next</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </main>
+
+        <!-- Sidebar on the Right -->
+        <nav class="col-md-3 col-lg-2 d-md-block border-left">
+          <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+              <!-- Dashboard Link -->
+              <li class="nav-item">
+                <a class="nav-link active text-secondary" href="#"
+                  >Définition</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </body>
+</html>

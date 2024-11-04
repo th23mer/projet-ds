@@ -41,29 +41,48 @@
               Temps de lecture approximative :
               <span class="badge text-white bg-primary">3 minutes</span>
             </h6>
-            <h1>Un Style</h1>
+            <h1>Classes et ID</h1>
           </div>
+          <p>Les class vous permettent de définir un style personnalisé.
 
-          <div aria-label="Page main-content" class="main-content">
-            <h2 id="def">Définition d'un style</h2>
+            Exemple:
+            Supposons que vous vouliez définir un style appelé"important"
+            pour écrire le texte en rouge / 18 pixels.
+            Vous rajouterez l'attribut class="important"à chacune des
+            balises que vous voulez modifier.
+            
+            &#60;h1 class=" "> &#60;/h1>
+            &#60;p class=" "> &#60;/p></p>
             <p>
-              La définition de base d'un style est simple : <br />
-              balise { propriété de style : valeur;...}
+                &#60;!doctype html>
+            &#60;meta charset="utf-8" />
+            &#60;head>
+            &#60;title>Page d'exemple pour tester le CSS&#60;/title>
+            &#60;link rel=
+
+            "stylesheet"type="text/css" href="essai.css" />
+
+            &#60;/head>
+            &#60;body>
+            &#60;p class="important"> Bonjour tout le monde &#60;/p>
+            &#60;/body>
+            &#60;/html>
             </p>
-            <h2 id="exp">Exemples CSS</h2>
-            <p> <h6>Exemple 1</h6>
-              On veut modifier tous les paragraphes pour qu'ils soient
-              écrits en bleu, avec une taille de 18 pixels.
-              Puisque tous les textes des différents paragraphes sont
-              entre les balises &#60;p> &#60;/p>, le code CSS est donc le suivant : <br>
-              p {color: blue; font-size: 18px; } <br><br>
-              <h6>Exemple 2</h6>
-              h3 { font-family: Arial; font-style: italic }
-              Ici, la balise h3 sera en Arial et en italique. Et dans le
-              document, toutes les balises &#60;h3> auront comme style
-              Arial et italique.</p>
-            <h2 id="app">Appliquer un style à plusieurs balises</h2>
-              
+            <h2>L'attribut id</h2>
+            <p>Il fonctionne exactement de la même manière que class, à un
+                détail prêt :
+                il ne peut être utilisé qu’une fois.
+                En pratique, nous ne mettrons des "id"que sur des éléments qui
+                sont uniques sur votre page, comme par exemple le logo :
+                &#60;img src="images/logo.png" id="logo" /> Dans le CSS, ce n'est
+                pas un point que vous devez mettre avant le nom de l'id, mais
+                un dièse (#) :
+                
+                #logo {
+                /* Mettez les propriétés CSS ici */
+                }</p>
+          <div aria-label="Page main-content" class="main-content">
+
           </div>
           <div aria-label="Page navigation" class="p-4">
             <nav>
@@ -71,18 +90,18 @@
                 <li class="page-item">
                   <a
                     class="page-link"
-                    href="./page1.html"
+                    href="../index.html"
                     aria-label="Previous"
                     >Previous</a
                   >
                 </li>
                 <li class="page-item">
-                  <a class="page-link" href="./page1.html">2</a>
+                  <a class="page-link" href="./page3.html">4</a>
                 </li>
-                <li class="page-item active"><a class="page-link" href="./page2.html">3</a></li>
-                <li class="page-item"><a class="page-link" href="./page3.html">4</a></li>
+                <li class="page-item active"><a class="page-link" href="./page4.html">5</a></li>
+                <li class="page-item"><a class="page-link" href="./page5.html">6</a></li>
                 <li class="page-item">
-                  <a class="page-link" href="./page3.html" aria-label="Next"
+                  <a class="page-link" href="./page5.html" aria-label="Next"
                     >Next</a
                   >
                 </li>
@@ -97,19 +116,9 @@
             <ul class="nav flex-column">
               <!-- Dashboard Link -->
               <li class="nav-item">
-                <a class="nav-link active text-secondary" href="./index.html"
-                  >Introduction to CSS</a
+                <a class="nav-link active text-secondary" href="#"
+                  >Définition</a
                 >
-                <a class="nav-link active text-secondary" href="./index.html"
-                  >Où écrire le style CSS</a
-                >
-                <a class="nav-link active text-secondary" href="./index.html"
-                  >Un Style</a
-                >
-                <li><a class="nav-link active text-secondary ml-4" href="#def">Définition d'un style</a></li>
-                <li><a class="nav-link active text-secondary ml-4" href="#exp">Exemples CSS</a></li>
-                <li><a class="nav-link active text-secondary ml-4" href="#app">Appliquer un style à plusieurs balises</a></li>
-
               </li>
             </ul>
           </div>
