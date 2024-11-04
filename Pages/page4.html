@@ -21,14 +21,14 @@
         <!-- Main Content -->
         <main
           role="main"
-          class="main-section col-md-9 col-lg-10 px-md-4 vh-100"
+          class="main-section col-md-9 col-lg-10 px-md-4 "
         >
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb mt-4">
               <li class="breadcrumb-item">
                 <img
                   class="mr-2 img-fluid"
-                  src="../assets/images/icons/home.svg"
+                  src="../assets/icons/home.svg"
                   alt="Home icon"
                 />
                 <a href="../index.html">Home</a>
@@ -43,44 +43,46 @@
             </h6>
             <h1>Classes et ID</h1>
           </div>
+          <h2 id="cl">Utiliser les classes</h2>
           <p>Les class vous permettent de définir un style personnalisé.
 
             Exemple:
-            Supposons que vous vouliez définir un style appelé"important"
+            Supposons que vous vouliez définir un style appelé "important"
             pour écrire le texte en rouge / 18 pixels.
             Vous rajouterez l'attribut class="important"à chacune des
-            balises que vous voulez modifier.
+            balises que vous voulez modifier. <br>
             
-            &#60;h1 class=" "> &#60;/h1>
-            &#60;p class=" "> &#60;/p></p>
-            <p>
-                &#60;!doctype html>
-            &#60;meta charset="utf-8" />
-            &#60;head>
-            &#60;title>Page d'exemple pour tester le CSS&#60;/title>
-            &#60;link rel=
+            &#60;h1 class=" "> &#60;/h1> <br>
+            &#60;p class=" "> &#60;/p> <br>
+            
+                &#60;!doctype html> <br>
+            &#60;meta charset="utf-8" /> <br>
+            &#60;head> <br>
+            &#60;title>Page d'exemple pour tester le CSS&#60;/title> <br>
+            &#60;link rel="stylesheet"type="text/css" href="essai.css" /> <br>
 
-            "stylesheet"type="text/css" href="essai.css" />
-
-            &#60;/head>
-            &#60;body>
-            &#60;p class="important"> Bonjour tout le monde &#60;/p>
-            &#60;/body>
+            &#60;/head> <br>
+            &#60;body> <br>
+            &#60;p class="important"> Bonjour tout le monde &#60;/p> <br>
+            &#60;/body> <br>
             &#60;/html>
             </p>
-            <h2>L'attribut id</h2>
+            <div class="text-info"> essai.css: <br>
+              .important { color:red;
+              font-size:18px; }</div>
+            <h2 id="id">L'attribut id</h2>
             <p>Il fonctionne exactement de la même manière que class, à un
                 détail prêt :
-                il ne peut être utilisé qu’une fois.
+                <p class="text-danger m-0">il ne peut être utilisé qu’une fois. </p>
                 En pratique, nous ne mettrons des "id"que sur des éléments qui
-                sont uniques sur votre page, comme par exemple le logo :
-                &#60;img src="images/logo.png" id="logo" /> Dans le CSS, ce n'est
+                sont uniques sur votre page, comme par exemple le logo : <br>
+                &#60;img src="images/logo.png" id="logo" /> <br> Dans le CSS, ce n'est
                 pas un point que vous devez mettre avant le nom de l'id, mais
-                un dièse (#) :
-                
+                un dièse (#) : <br>
+                <p class="text-info">
                 #logo {
-                /* Mettez les propriétés CSS ici */
-                }</p>
+                /* Mettez les propriétés CSS ici */}</p>
+                </p>
           <div aria-label="Page main-content" class="main-content">
 
           </div>
@@ -90,7 +92,7 @@
                 <li class="page-item">
                   <a
                     class="page-link"
-                    href="../index.html"
+                    href="./page3.html"
                     aria-label="Previous"
                     >Previous</a
                   >
@@ -116,8 +118,66 @@
             <ul class="nav flex-column">
               <!-- Dashboard Link -->
               <li class="nav-item">
-                <a class="nav-link active text-secondary" href="#"
-                  >Définition</a
+                <a class="nav-link active text-secondary" href="../index.html"
+                  >Introduction to CSS</a
+                >
+                <a class="nav-link active text-secondary" href="./page1.html"
+                  >Où écrire le style CSS</a
+                >
+                <a class="nav-link active text-secondary" href="./page2.html"
+                  >Un Style</a
+                >
+                <a class="nav-link active text-secondary" href="./page3.html"
+                  >Des commentaires dans du CSS</a
+                >
+                <a class="nav-link active text-secondary" href="./page4.html"
+                  >Classes et ID</a
+                >
+                <a class="nav-link active text-secondary" href="./page5.html"
+                  >Les balises universelles</a
+                >
+                <a class="nav-link active text-secondary" href="./page6.html"
+                  >Imbrications de balises</a
+                >
+                <a class="nav-link active text-secondary" href="./page7.html"
+                  >Taille du texte</a
+                >
+                <a class="nav-link active text-secondary" href="./page8.html"
+                  >Police du texte</a
+                >
+              </li>
+                <a class="nav-link active text-secondary" href="./page9.html"
+                  >Alignement du texte</a
+                >
+                <a class="nav-link active text-secondary" href="./page10.html"
+                  >L'indentation</a
+                >
+                <a class="nav-link active text-secondary" href="./page11.html"
+                  >Effets de style</a
+                >
+                <a class="nav-link active text-secondary" href="./page12.html"
+                  >Les majuscules en CSS</a
+                >
+                <a class="nav-link active text-secondary" href="./page13.html"
+                  >La décoration du texte</a
+                >
+                <a class="nav-link active text-secondary" href="./page14.html"
+                  >Les couleurs</a
+                >
+                <a class="nav-link active text-secondary" href="./page15.html"
+                  >Le fond</a
+                >
+                <a class="nav-link active text-secondary" href="./page16.html"
+                  >Couleur de fond</a
+                >
+                <a class="nav-link active text-secondary" href="./page17.html"
+                  >Image de fond</a
+                >
+                <a class="nav-link active text-secondary" href="./page18.html"
+                  >Style des liens</a
+                >
+                <a class="nav-link active text-secondary" href="./page19.html"
+                  >Style des listes</a
                 >
               </li>
             </ul>

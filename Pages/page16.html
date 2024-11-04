@@ -21,14 +21,14 @@
         <!-- Main Content -->
         <main
           role="main"
-          class="main-section col-md-9 col-lg-10 px-md-4 vh-100"
+          class="main-section col-md-9 col-lg-10 px-md-4 "
         >
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb mt-4">
               <li class="breadcrumb-item">
                 <img
                   class="mr-2 img-fluid"
-                  src="../assets/images/icons/home.svg"
+                  src="../assets/icons/home.svg"
                   alt="Home icon"
                 />
                 <a href="../index.html">Home</a>
@@ -41,22 +41,54 @@
               Temps de lecture approximative :
               <span class="badge text-white bg-primary">3 minutes</span>
             </h6>
-            <h1>Le fond</h1>
+            <h1>Couleur de fond</h1>
           </div>
 
           <div aria-label="Page main-content" class="main-content">
-            <ul>
-                <li>Le fond ne désigne pas forcément le fond de toute une
-                    page web.</li>
-                <li>On peut aussi appliquer un fond uniquement aux titres, ou
-                    aux paragraphes, ou encore à certains mots d’un
-                    paragraphe.</li>
-                <li>Il existe 3 types de fonds :<ul>
-                    <li>Les fonds comportant une couleur.</li>
-                    <li>Les fonds comportant des dégradés de couleurs.</li>
-                    <li>Les fonds comportant une image de fond.</li>
-                </ul></li>
-            </ul>
+            <p>
+                Pour indiquer une couleur de fond, on utilise la propriété CSS
+                background-color.
+                Pour indiquer la couleur de fond de la page web, il faut travailler
+                sur la balise &#60;body> qui correspond à toute la page web.
+
+                body {
+                background-color : black;
+                color:white;
+                }
+                Si on applique une couleur de fond noire et une couleur de
+                texte blanche à la balise &#60;body>, tous les titres et paragraphes
+                auront eux aussi une couleur de fond noire et un texte de couleur
+                blanche.
+            </p>
+            <h3>Exemple</h3>
+            <p>
+                body {
+                    background-color: black; color: white; /* Toutes les balises
+                    contenues dans body verront leur texte coloré en blanc... */
+                    }
+                    
+                    h1 {
+                    color: red; /* ... sauf si je demande expressément de changer
+                    la couleur par la suite */
+                    }
+                    
+                    .surligne /* Un style qui permet par exemple de surligner
+                    certains mots d'un texte */ {
+                    background-color:yellow;
+                    color: black; /* Le texte surligné sera écrit en noir*/
+                    }
+            </p>
+            <h3>Dégradé</h3>
+            <p>La propriété linear-gradiant
+                crée un dégradé de haut en bas (ou vice-versa) ou en diagonale</p>
+            <h4>Exemple:</h4>
+            <img src="" alt="">
+            <h4>La propriété radial-gradiant</h4>
+            <p>
+                un dégradé radial commence à partir d'un point central et rayonne
+                la couleur vers les bords d'un conteneur</p>
+                <h4>Exemples :</h4>
+                <img src="" alt="">
           </div>
 
           <div aria-label="Page navigation" class="p-4">
@@ -65,7 +97,7 @@
                 <li class="page-item">
                   <a
                     class="page-link"
-                    href="../index.html"
+                    href="./page15.html"
                     aria-label="Previous"
                     >Previous</a
                   >
@@ -91,8 +123,66 @@
             <ul class="nav flex-column">
               <!-- Dashboard Link -->
               <li class="nav-item">
-                <a class="nav-link active text-secondary" href="#"
-                  >Définition</a
+                <a class="nav-link active text-secondary" href="../index.html"
+                  >Introduction to CSS</a
+                >
+                <a class="nav-link active text-secondary" href="./page1.html"
+                  >Où écrire le style CSS</a
+                >
+                <a class="nav-link active text-secondary" href="./page2.html"
+                  >Un Style</a
+                >
+                <a class="nav-link active text-secondary" href="./page3.html"
+                  >Des commentaires dans du CSS</a
+                >
+                <a class="nav-link active text-secondary" href="./page4.html"
+                  >Classes et ID</a
+                >
+                <a class="nav-link active text-secondary" href="./page5.html"
+                  >Les balises universelles</a
+                >
+                <a class="nav-link active text-secondary" href="./page6.html"
+                  >Imbrications de balises</a
+                >
+                <a class="nav-link active text-secondary" href="./page7.html"
+                  >Taille du texte</a
+                >
+                <a class="nav-link active text-secondary" href="./page8.html"
+                  >Police du texte</a
+                >
+              </li>
+                <a class="nav-link active text-secondary" href="./page9.html"
+                  >Alignement du texte</a
+                >
+                <a class="nav-link active text-secondary" href="./page10.html"
+                  >L'indentation</a
+                >
+                <a class="nav-link active text-secondary" href="./page11.html"
+                  >Effets de style</a
+                >
+                <a class="nav-link active text-secondary" href="./page12.html"
+                  >Les majuscules en CSS</a
+                >
+                <a class="nav-link active text-secondary" href="./page13.html"
+                  >La décoration du texte</a
+                >
+                <a class="nav-link active text-secondary" href="./page14.html"
+                  >Les couleurs</a
+                >
+                <a class="nav-link active text-secondary" href="./page15.html"
+                  >Le fond</a
+                >
+                <a class="nav-link active text-secondary" href="./page16.html"
+                  >Couleur de fond</a
+                >
+                <a class="nav-link active text-secondary" href="./page17.html"
+                  >Image de fond</a
+                >
+                <a class="nav-link active text-secondary" href="./page18.html"
+                  >Style des liens</a
+                >
+                <a class="nav-link active text-secondary" href="./page19.html"
+                  >Style des listes</a
                 >
               </li>
             </ul>

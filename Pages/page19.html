@@ -9,11 +9,6 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/Logo.png"
-      type="image/x-icon"
-    />
   </head>
   <body>
     <div class="container-fluid">
@@ -21,14 +16,14 @@
         <!-- Main Content -->
         <main
           role="main"
-          class="main-section col-md-9 col-lg-10 px-md-4 vh-100"
+          class="main-section col-md-9 col-lg-10 px-md-4 "
         >
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb mt-4">
               <li class="breadcrumb-item">
                 <img
                   class="mr-2 img-fluid"
-                  src="../assets/images/icons/home.svg"
+                  src="../assets/icons/home.svg"
                   alt="Home icon"
                 />
                 <a href="../index.html">Home</a>
@@ -41,46 +36,52 @@
               Temps de lecture approximative :
               <span class="badge text-white bg-primary">3 minutes</span>
             </h6>
-            <h1>Style des liens</h1>
+            <h1>Style des listes</h1>
           </div>
 
           <div aria-label="Page main-content" class="main-content">
+            <h3>Retrait</h3>
             <p>
-                a {
-                text-decoration : none ;/* Les liens ne seront plus soulignés */
-                color : red ; /* Les liens seront en rouge au lieu de bleu */
-                font-style : italic; /* Les liens seront en italique */
-                }
+                La propriété list-style-position permet d'indiquer si on
+                veut que la liste soit mise en retrait ou non.
+                list-style-position peut prendre 2 valeurs :
+
+                inside : la liste n'est pas mise en retrait.
+
+                outside : la liste est mise en retrait (par défaut).
             </p>
-            <h3>Pseudo-classes</h3>  
-            <p>
-                Au passage de la souris :
-                "a:hover" : Quand la souris est sur le lien" (quand on pointe
-                dessus).
-                
-                a:hover {
-                text-decoration: underline; /*Le lien deviendra souligné quand
-                on pointera dessus */
-                color: green;/* Le lien sera écrit en vert quand on pointera dessus
-                */
+            <img src="" alt="">
+            <h3>Type des puces</h3>
+            <div class="border border-info">La propriété list-style-type vous permet de changer
+                l’apparence de la puce.
+                Pour les listes non ordonnées (<ul>):
+                disc : un disque noir (par défaut).
+                circle : un cercle.
+                square : un carré.
+                none :aucune puce ne sera utilisée.
+            </div>
+                <br>
+            <div class="border border-info">La propriété list-style-image vous permet d'utiliser
+                n'importe quelle image à la place d’une puce.
+                ul {
+                list-style-image: url (image.png);
                 }
-            </p>
-            <ul>
-                <li>Le pseudo-classe :active permet d’appliquer un style particulier
-                    au moment du clic.</li>
-                <li>Le pseudo-classe :visited permet d’appliquer un style au lien
-                    déjà visité.</li>
-            </ul>
+            </div>
+            <h3>Type de la numérotation</h3>
             <p>
-                a:active /* Quand le visiteur clique sur le lien */ {
-                    background-color: #FFCC66; }
-                    a:hover /* Quand le visiteur pointe sur le lien */ {
-                    text-decoration:underline; color:green; }
-                    a:visited {
-                    color: #00FF00;}
-                    
-                    a /* Lien normal */ {
-                    text-decoration:none; color:red; font-style:italic; }
+                Pour les listes ordonnées (<ol>) , list-style-type peut prendre les valeurs:
+
+                decimal :des nombres 1, 2, 3, 4, 5... (par défaut)
+
+                decimal-leading-zero :des nombres commençant par zéro (01, 02, 03, ...).
+                upper-roman :numérotation romaine, en majuscules (I, II, III, IV, V...)
+                lower-roman :numérotation romaine, en minuscules (i, ii, iii, iv, v...)
+
+                upper-alpha :numérotation alphabétique, en majuscules (A, B, C, D, E...)
+
+                lower-alpha : numérotation alphabétique, en minuscules (a, b, c, d, e...)
+
+                lower-greek : numérotation grecque. (α, β,γ, ...)
             </p>
           </div>
 
@@ -96,12 +97,12 @@
                   >
                 </li>
                 <li class="page-item">
-                  <a class="page-link" href="./page18.html">19</a>
+                  <a class="page-link" href="./page17.html">18</a>
                 </li>
+                <li class="page-item"><a class="page-link" href="./page18.html">19</a></li>
                 <li class="page-item"><a class="page-link" href="./page19.html">20</a></li>
-                <li class="page-item"><a class="page-link" href="./page20.html">21</a></li>
                 <li class="page-item">
-                  <a class="page-link" href="./page20.html" aria-label="Next"
+                  <a class="page-link disabled" aria-label="Next"
                     >Next</a
                   >
                 </li>
@@ -116,8 +117,66 @@
             <ul class="nav flex-column">
               <!-- Dashboard Link -->
               <li class="nav-item">
-                <a class="nav-link active text-secondary" href="#"
-                  >Définition</a
+                <a class="nav-link active text-secondary" href="../index.html"
+                  >Introduction to CSS</a
+                >
+                <a class="nav-link active text-secondary" href="./page1.html"
+                  >Où écrire le style CSS</a
+                >
+                <a class="nav-link active text-secondary" href="./page2.html"
+                  >Un Style</a
+                >
+                <a class="nav-link active text-secondary" href="./page3.html"
+                  >Des commentaires dans du CSS</a
+                >
+                <a class="nav-link active text-secondary" href="./page4.html"
+                  >Classes et ID</a
+                >
+                <a class="nav-link active text-secondary" href="./page5.html"
+                  >Les balises universelles</a
+                >
+                <a class="nav-link active text-secondary" href="./page6.html"
+                  >Imbrications de balises</a
+                >
+                <a class="nav-link active text-secondary" href="./page7.html"
+                  >Taille du texte</a
+                >
+                <a class="nav-link active text-secondary" href="./page8.html"
+                  >Police du texte</a
+                >
+              </li>
+                <a class="nav-link active text-secondary" href="./page9.html"
+                  >Alignement du texte</a
+                >
+                <a class="nav-link active text-secondary" href="./page10.html"
+                  >L'indentation</a
+                >
+                <a class="nav-link active text-secondary" href="./page11.html"
+                  >Effets de style</a
+                >
+                <a class="nav-link active text-secondary" href="./page12.html"
+                  >Les majuscules en CSS</a
+                >
+                <a class="nav-link active text-secondary" href="./page13.html"
+                  >La décoration du texte</a
+                >
+                <a class="nav-link active text-secondary" href="./page14.html"
+                  >Les couleurs</a
+                >
+                <a class="nav-link active text-secondary" href="./page15.html"
+                  >Le fond</a
+                >
+                <a class="nav-link active text-secondary" href="./page16.html"
+                  >Couleur de fond</a
+                >
+                <a class="nav-link active text-secondary" href="./page17.html"
+                  >Image de fond</a
+                >
+                <a class="nav-link active text-secondary" href="./page18.html"
+                  >Style des liens</a
+                >
+                <a class="nav-link active text-secondary" href="./page19.html"
+                  >Style des listes</a
                 >
               </li>
             </ul>

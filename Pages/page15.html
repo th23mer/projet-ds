@@ -41,70 +41,22 @@
               Temps de lecture approximative :
               <span class="badge text-white bg-primary">3 minutes</span>
             </h6>
-            <h1>Style des liens</h1>
+            <h1>Le fond</h1>
           </div>
 
           <div aria-label="Page main-content" class="main-content">
-            <p>
-                a {
-                text-decoration : none ;/* Les liens ne seront plus soulignés */
-                color : red ; /* Les liens seront en rouge au lieu de bleu */
-                font-style : italic; /* Les liens seront en italique */
-                }
-            </p>
-            <h3>Pseudo-classes</h3>  
-            <p>
-                Au passage de la souris :
-                "a:hover" : Quand la souris est sur le lien" (quand on pointe
-                dessus).
-                
-                a:hover {
-                text-decoration: underline; /*Le lien deviendra souligné quand
-                on pointera dessus */
-                color: green;/* Le lien sera écrit en vert quand on pointera dessus
-                */
-                }
-            </p>
             <ul>
-                <li>Le pseudo-classe :active permet d’appliquer un style particulier
-                    au moment du clic.</li>
-                <li>Le pseudo-classe :visited permet d’appliquer un style au lien
-                    déjà visité.</li>
+                <li>Le fond ne désigne pas forcément le fond de toute une
+                    page web.</li>
+                <li>On peut aussi appliquer un fond uniquement aux titres, ou
+                    aux paragraphes, ou encore à certains mots d’un
+                    paragraphe.</li>
+                <li>Il existe 3 types de fonds :<ul>
+                    <li>Les fonds comportant une couleur.</li>
+                    <li>Les fonds comportant des dégradés de couleurs.</li>
+                    <li>Les fonds comportant une image de fond.</li>
+                </ul></li>
             </ul>
-            <p>
-                a:active /* Quand le visiteur clique sur le lien */ {
-                    background-color: #FFCC66; }
-                    a:hover /* Quand le visiteur pointe sur le lien */ {
-                    text-decoration:underline; color:green; }
-                    a:visited {
-                    color: #00FF00;}
-                    
-                    a /* Lien normal */ {
-                    text-decoration:none; color:red; font-style:italic; }
-            </p>
-            <p>
-              En CSS, il est possible de modifier automatiquement
-              l’apparence de la première lettre et de la première ligne du
-              texte contenu dans une balise.
-
-              La première lettre
-              p:first-letter /* La première lettre de chaque paragraphe */ {
-              font-weight:bold;/* En gras */
-              font-size:1.2em;/* Ecrit légèrement plus gros que la normale */
-              color:blue;/* En bleu */
-              }
-              p {
-              text-indent:20px;
-              }
-              La première ligne
-
-              p:first-line {
-              font-variant: small-caps; /* En petites capitales */
-              }
-              p {
-              text-indent: 20px;
-              }
-          </p>
           </div>
 
           <div aria-label="Page navigation" class="p-4">
@@ -113,18 +65,18 @@
                 <li class="page-item">
                   <a
                     class="page-link"
-                    href="./page17.html"
+                    href="./page14.html"
                     aria-label="Previous"
                     >Previous</a
                   >
                 </li>
                 <li class="page-item">
-                  <a class="page-link" href="./page17.html">18</a>
+                  <a class="page-link" href="./page14.html">15</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="./page18.html">19</a></li>
-                <li class="page-item"><a class="page-link" href="./page19.html">20</a></li>
+                <li class="page-item"><a class="page-link" href="./page15.html">16</a></li>
+                <li class="page-item"><a class="page-link" href="./page16.html">18</a></li>
                 <li class="page-item">
-                  <a class="page-link" href="./page19.html" aria-label="Next"
+                  <a class="page-link" href="./page16.html" aria-label="Next"
                     >Next</a
                   >
                 </li>
