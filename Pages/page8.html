@@ -9,11 +9,7 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/Logo.png"
-      type="image/x-icon"
-    />
+    
   </head>
   <body>
     <div class="container-fluid">
@@ -46,33 +42,44 @@
 
           <div aria-label="Page main-content" class="main-content">
             <p>
-              La propriété CSS qui permet d'indiquer la police est : font-family
-              Vous devez indiquer le nom de la police comme ceci :
-              font-family:police; Pour éviter qu'il n'y ait de problème si
+              La propriété CSS qui permet d'indiquer la police est  :<br> font-family <br>
+              Vous devez indiquer le nom de la police comme ceci : <br>
+              font-family:police; <br> Pour éviter qu'il n'y ait de problème si
               l'internaute n'a pas la même police que vous, on met en général
-              plusieurs noms de police, séparés par des virgules :
-              font-family:police1, police2, police3, police4; Le navigateur
+              plusieurs noms de police, séparés par des virgules : <br>
+              font-family:police1, police2, police3, police4; <br> Le navigateur
               essaiera d'abord de mettre la police1. S'il ne l'a pas, il
               essaiera de mettre la police2. S'il ne l'a pas, il essaiera la
               police3 et ainsi de suite.
             </p>
             <p>
               Voici une liste de polices qui fonctionnent bien sur la plupart
-              des navigateurs : Arial Arial Black Comic Sans MS Courier New
-              Georgia Impact Times New Roman Trebuchet MS Verdana
+              des navigateurs : <br>
+              <ul class="list-unstyled text-danger">
+                <li>Arial</li>
+                <li>Arial Black</li>
+                <li>Comic Sans MS</li>
+                <li>Courier New</li>
+                <li>Georgia</li>
+                <li>Impact</li>
+                <li>Times New Roman</li>
+                <li>Trebuchet MS</li>
+                <li>Verdana</li>
+              </ul>
             </p>
             <h2>Exemple</h2>
             <p>
-              h1 { font-family:"Arial Black", Arial, Verdana, serif;/* On essaie
-              d'avoir Arial Black en priorité */ } p { font-family:"Comic Sans
-              MS", "Trebuchet MS", Georgia, serif; }
+              h1 { <p class="text-info"> font-family:"Arial Black", Arial, Verdana, serif;/* On essaie
+              d'avoir Arial Black en priorité */ </p> } <br>
+              p {  <p class="text-info"> font-family:"Comic Sans
+              MS", "Trebuchet MS", Georgia, serif; </p> }
             </p>
           </div>
 
           <div aria-label="Page navigation" class="p-4">
             <nav>
               <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
+                <li class="page-item">
                   <a
                     class="page-link"
                     href="./page7.html"

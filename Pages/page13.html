@@ -46,23 +46,30 @@
 
           <div aria-label="Page main-content" class="main-content">
             <p>
-              La propriété text-decoration underline :souligné. line-through
-              :barré. overline :ligne au-dessus. none :normal (par défaut).
+              La propriété text-decoration :
+              <ul class="list-unstyled">
+                <li><span class="text-success font-weight-bold">underline:</span> souligné.</li>
+                <li><span class="text-success font-weight-bold">line-through:</span> barré.</li>
+                <li><span class="text-success font-weight-bold">overline:</span> ligne au-dessus.</li>
+                <li><span class="text-success font-weight-bold">none:</span> normal (par défaut).</li>
+              </ul>
             </p>
-            <div>
-              h1 { text-align: center; font-family:"Arial Black", Arial, "Times
-              New Roman", serif; text-decoration: blink; } .souligne {
-              text-decoration: underline; } .barre { text-decoration:
-              line-through; } .ligne_dessus { text-decoration: overline; }
-            </div>
-            <div>
-              &#60;h1>A ne pas manquer !&#60;/h1> &#60;p>La propriété CSS
-              &#60;em>text-decoration&#60;/em> permet de décorer un peu son
-              texte :&#60;br /> &#60;span class="souligne">en le
-              soulignant&#60;/span>&#60;br /> &#60;span class="barre">en le
-              barrant&#60;/span>...&#60;br /> ...ou encore &#60;span
-              class="ligne_dessus">en mettant une ligne au-
-              dessus&#60;/span>.&#60;/p>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>h1 { text-align: center; font-family: "Arial Black", Arial, "Times New Roman", serif; text-decoration: blink; }</p>
+                  <p>.souligne { text-decoration: underline; }</p>
+                  <p>.barre { text-decoration: line-through; }</p>
+                  <p>.ligne_dessus { text-decoration: overline; }</p>
+                </div>
+                <div class="col-md-6">
+                  <p>&lt;h1&gt;A ne pas manquer !&lt;/h1&gt;</p>
+                  <p>&lt;p&gt;La propriété CSS &lt;em&gt;text-decoration&lt;/em&gt; permet de décorer un peu son texte :</p>
+                  <p>&lt;br /&gt; &lt;span class="souligne"&gt;en le soulignant&lt;/span&gt;&lt;br /&gt;</p>
+                  <p>&lt;span class="barre"&gt;en le barrant&lt;/span&gt;...&lt;br /&gt;</p>
+                  <p>...ou encore &lt;span class="ligne_dessus"&gt;en mettant une ligne au-dessus&lt;/span&gt;.&lt;/p&gt;</p>
+                </div>
+              </div>
             </div>
           </div>
 
